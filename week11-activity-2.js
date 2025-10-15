@@ -20,3 +20,19 @@ Using dot notation, add the name and surname fields to the
 object by entering your data as values. 
 Try to display the individual fields on the console. */
 
+const ticket = {
+  from: "Tagaytay City",
+  to: "Pasay City, Manila",
+  price: 150
+};
+
+console.log("Starting station:", ticket.from);
+console.log("End station:", ticket.to);
+console.log("Ticket price:", ticket.price);
+
+const person = {};
+person.name = "Jasmine Aira 'Cali'";
+person.surname = "Manimtim";
+
+console.log(person.name);
+console.log(person.surname);
