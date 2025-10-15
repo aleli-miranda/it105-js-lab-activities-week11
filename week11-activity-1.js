@@ -26,3 +26,5 @@ again in the format: name / phone / email.
 Use the length property of the array to determine the index of the last element. 
 Remember that the array elements are indexed starting at 0
 */
+
+//programmed by: Aleli Miranda

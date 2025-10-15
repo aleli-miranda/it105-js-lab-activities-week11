@@ -20,3 +20,4 @@ Using dot notation, add the name and surname fields to the
 object by entering your data as values. 
 Try to display the individual fields on the console. */
 
+//programmed by: Aleli Miranda
