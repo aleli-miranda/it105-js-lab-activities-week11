@@ -14,15 +14,33 @@ email: "libero@convallis.edu"
 
 //INSTRUCTIONS
 /*
-1.  ADD a new contact using the appropriate array method. 
+1.  ADD a new contact using the appropriate array method.
 The new contact is: Maisie Haley / 0913 531 3030 / risus.Quisque@urna.ca.
 
 2. UPDATE the phone number for Helen Richards to: 0800 2222.
 
 3.  DELETE the contact for Raja Villarreal from the array.
 
-4.  Display the first and last contact, 
+4.  Display the first and last contact,
+
 again in the format: name / phone / email. 
 Use the length property of the array to determine the index of the last element. 
 Remember that the array elements are indexed starting at 0
 */
+
+addnewcontact = [{
+name:  "Maisie Haley",
+phone: "0913 531 3030",
+email: "risus.Quisque@urna.ca"
+}];
+newarray = contacts.concat(addnewcontact); // 1
+
+newarray[2].phone = "0800 2222"; // 2
+
+newarray[1] = undefined; // 3
+
+console.log(newarray)
+console.log(`_________________________________\nFirst and last:\n`)
+console.log(newarray[0], newarray[3]);  // 4
+
+

@@ -20,3 +20,21 @@ Using dot notation, add the name and surname fields to the
 object by entering your data as values. 
 Try to display the individual fields on the console. */
 
+ticket = {
+  from: "Binan Train Station",
+  to: "San Pedro, Laguna Station",
+  price: 40
+};
+
+person = {
+	name: "Justine",
+	surname: "Jeciel"
+};
+
+// console.log(Object.values(ticket))
+console.log(`Display the Values: \
+	\n ${ticket.from}\
+	\n ${ticket.to}\
+	\n ${ticket.price}\
+	\nName: ${person.name}\
+	\nSurname: ${person.surname}`);
