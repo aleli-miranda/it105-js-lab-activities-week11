@@ -20,3 +20,16 @@ Using dot notation, add the name and surname fields to the
 object by entering your data as values. 
 Try to display the individual fields on the console. */
 
+//Problem #1
+let train_ticket = [{starting_station: "Mendez Bayan", end_station: "Ayala Malls Serin", ticket_price: "18"
+}]
+console.log("TRAIN TICKET-PROBLEM #1");
+console.log(train_ticket);
+console.log(" ");
+//Problem #2
+let person = []
+person.name = "Ayessa";
+person.surname = "Vicedo";
+console.log("EMPTY OBJECT-PROBLEM #2");
+console.log("Name: ", person.name);
+console.log("Surname: ", person.surname);

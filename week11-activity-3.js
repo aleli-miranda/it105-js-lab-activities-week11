@@ -13,7 +13,45 @@ Create an array of three objects representing the books.
 Each object must have the following properties: title, author, pages.*/
 
 
+let JS_books = 
+[{title: "Speaking JavaScript" , author: "Axel Rauschmayer" , pages: "460" }, 
+{title: "Programming JavaScript Applications", author: "Eric Elliott", pages: "254" }, 
+{title:"Understanding ECMAScript 6" , author: "Nicholas C. Zakas" , pages: "352"}];
+console.log("Original array")
+console.log(JS_books);
+console.log(" ");
+//adding new item
+console.log("Adding new item in array");
+JS_books.push({title: "Learning JavaScript Design Pattern",author: "Addy Osmani", pages: "254" });
+console.log(JS_books);
+console.log("Array length: ", JS_books.length);
+console.log("Book titles: ");
+console.log(JS_books[0].title);
+console.log(JS_books[1].title);
+console.log(JS_books[2].title);
+console.log(JS_books[3].title);
+console.log(" ");
 
+//new array
+console.log("New list of books");
+let new_list = JS_books.slice(2)
+console.log(new_list);
+console.log(" ");
+
+//removing first item on the list
+console.log("Removing first item")
+JS_books.shift();
+console.log(JS_books) 
+console.log("Array length: ", JS_books.length);
+console.log("Book titles: "); 
+console.log(JS_books[0].title);
+console.log(JS_books[1].title);
+console.log(JS_books[2].title);
+console.log(" "); 
+
+//sum of pages
+console.log("Total pages of all the books: ",
+  Number(JS_books[0].pages) + Number(JS_books[1].pages) + Number(JS_books[2].pages))
 
 
 /* Add a new book to the collection: 
