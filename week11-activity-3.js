@@ -43,3 +43,69 @@ Display the length of the array and all the names of the books from the collecti
 
 //Display the sum of the pages of all the books from the collection.
 
+//1st Contruction of array with 3 books.
+console.log("Instruction 1");
+
+let books = [{
+  title: "Speaking JavaScript",
+  author: "Axel Rauschmayer",
+  num_of_pages: "460"
+}, {
+  title: "Programming JavaScript Applications",
+  author: "Eric Elliott",
+  num_of_pages: "254"
+}, {
+  title: "Understanding ECMAScript 6",
+  author: "Nicholas C. Zakas",
+  num_of_pages: "352"
+}]
+
+console.log("Current list of books inside the array:", books);
+
+//2nd Adding another book in the current list.
+console.log("");
+console.log("Instruction 2");
+console.log("");
+
+books.push({title: "Learning JavaScript Design Patterns", author: "Addy Osmani", num_of_pages: "254"});
+
+console.log("Number of books inside the array:", books.length);
+
+console.log(`Book titles:
+${books[0].title}
+${books[1].title}
+${books[2].title}
+${books[3].title}`);
+
+//3rd Slicing last 2 books to the new array
+console.log("");
+console.log("Instruction 3");
+console.log("");
+
+let lbooks = books.slice(2);
+
+console.log("Last two books from the array:", lbooks);
+
+//4th Removing the first book from the 1st list.
+console.log("");
+console.log("Instruction 4");
+console.log("");
+
+console.log("Before removing the first book:", books.length, "books");
+
+books.shift();
+
+console.log("After removing the first book:", books.length, "books");
+
+//5th Display the sum of the pages of all the books from the collection. 
+console.log("");
+console.log("Instruction 5");
+console.log("");
+
+console.log("Total number of pages of all the books:",
+  Number(books[0].num_of_pages) +
+  Number(books[1].num_of_pages) +
+  Number(books[2].num_of_pages)
+);
+
+// William Czyron A. Gatdula BSIT 211B
