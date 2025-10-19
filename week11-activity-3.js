@@ -97,6 +97,12 @@ books.shift();
 
 console.log("After removing the first book:", books.length, "books");
 
+console.log(`Book left:
+${books[0].title}
+${books[1].title}
+${books[2].title}
+`);
+
 //5th Display the sum of the pages of all the books from the collection. 
 console.log("");
 console.log("Instruction 5");
