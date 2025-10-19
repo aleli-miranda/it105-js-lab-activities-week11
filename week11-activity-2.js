@@ -39,6 +39,7 @@ let person = [];
 person.name = "William";
 person.surname = "Gatdula";
 
-console.log(person);
+console.log(person.name);
+console.log(person.surname);
 
 // William Czyron A. Gatdula BSIT 211B
