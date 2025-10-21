@@ -20,3 +20,17 @@ Using dot notation, add the name and surname fields to the
 object by entering your data as values. 
 Try to display the individual fields on the console. */
 
+"use strict";
+let ticket = {
+start_station: "Encantadia",
+end_station: "Biringan, 99km ",
+price: "$911"
+}
+
+console.log(ticket)
+
+let person= {}
+
+person.FirstName = ("Ranford")
+person.LastName = ("Aves")
+console.log(person)

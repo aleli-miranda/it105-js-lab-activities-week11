@@ -1,3 +1,4 @@
+"use strict";
 let contacts = [{
 name: "Maxwell Wright",
 phone: "(0191) 719 6495",
@@ -26,3 +27,15 @@ again in the format: name / phone / email.
 Use the length property of the array to determine the index of the last element. 
 Remember that the array elements are indexed starting at 0
 */
+contacts[3] = { name: "Maisie Haley", phone:"0913 531 3030" , email: "risus.Quisque@urna.ca." };
+
+contacts[2].phone = ('0800 2222');
+
+contacts.pop(1)
+
+console.log(contacts[0]);
+
+console.log(contacts[2]);
+console.log("index of the last element: ",contacts.length)
+
+

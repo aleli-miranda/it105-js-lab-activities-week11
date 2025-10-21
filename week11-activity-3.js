@@ -43,3 +43,32 @@ Display the length of the array and all the names of the books from the collecti
 
 //Display the sum of the pages of all the books from the collection.
 
+"use strict";
+let books = [{
+title: "Speaking JavaScript",
+author: "Axel Rauschmayer",
+pages: "460"
+},{
+title: "Programming JavaScript Applications",
+author: "Eric Elliott",
+pages: "254"
+},{
+title: "Understanding ECMAScript 6",
+author: "Nicholas C. Zakas",
+pages: "352"
+}
+]
+
+books.push({
+  title: "JavaScript Design Patterns",
+  author: "Addy Osmani",
+  pages: "254"
+});
+
+let last = books.slice(2,4);
+
+books.shift();
+console.log("Remaining Books: ", books.length)
+console.log(books);
+
+console.log("The Sum of all pages is: ", Number(books[0].pages) + Number(books[1].pages) + Number(books[2].pages) )
