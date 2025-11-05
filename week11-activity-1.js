@@ -26,3 +26,9 @@ again in the format: name / phone / email.
 Use the length property of the array to determine the index of the last element. 
 Remember that the array elements are indexed starting at 0
 */
+
+contacts = contacts.filter(contact => contact.name !== "Raja Villarreal");
+  
+  // 4. Display first and last contact
+  console.log(`${contacts[0].name} / ${contacts[0].phone} / ${contacts[0].email}`);
+  console.log(`${contacts[contacts.length - 1].name} / ${contacts[contacts.length - 1].phone} / ${contacts[contacts.length - 1].email}`);
