@@ -20,3 +20,21 @@ Using dot notation, add the name and surname fields to the
 object by entering your data as values. 
 Try to display the individual fields on the console. */
 
+// Question 1
+let ticket = {
+  from: "Tagaytay Station",
+  to: "Santa Rosa Station",
+  price: 120
+};
+
+console.log(ticket.from);
+console.log(ticket.to);
+console.log(ticket.price);
+
+// Question 2
+let person = {};
+person.name = "Juan";
+person.surname = "Dela Cruz";
+
+console.log(person.name);
+console.log(person.surname);
