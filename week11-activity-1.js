@@ -12,17 +12,22 @@ phone: "0800 1111",
 email: "libero@convallis.edu"
 }];
 
-//INSTRUCTIONS
-/*
-1.  ADD a new contact using the appropriate array method. 
-The new contact is: Maisie Haley / 0913 531 3030 / risus.Quisque@urna.ca.
+contacts.push({
+  name: "Maisie Haley",
+  phone: "0913 531 3030",
+  email: "risus.Quisque@urna.ca"
+});
 
-2. UPDATE the phone number for Helen Richards to: 0800 2222.
+for (let contact of contacts) {
+  if (contact.name === "Helen Richards") {
+    contact.phone = "0800 2222";
+  }
+}
 
-3.  DELETE the contact for Raja Villarreal from the array.
+contacts = contacts.filter(contact => contact.name !== "Raja Villarreal");
 
-4.  Display the first and last contact, 
-again in the format: name / phone / email. 
-Use the length property of the array to determine the index of the last element. 
-Remember that the array elements are indexed starting at 0
-*/
+let first = contacts[0];
+let last = contacts[contacts.length - 1];
+
+console.log(`${first.name} / ${first.phone} / ${first.email}`);
+console.log(`${last.name} / ${last.phone} / ${last.email}`);

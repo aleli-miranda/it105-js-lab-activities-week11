@@ -1,31 +1,53 @@
-//ARRAY
-/*We are setting up our small library of books 
-about JavaScript programming. 
-We have three books and want to prepare a list of them. 
-We will store three pieces information about each book: 
-title, author, and number of pages:
+let books = [
+  {
+    title: "Speaking JavaScript",
+    author: "Axel Rauschmayer",
+    pages: 460
+  },
+  {
+    title: "Programming JavaScript Applications",
+    author: "Eric Elliott",
+    pages: 254
+  },
+  {
+    title: "Understanding ECMAScript 6",
+    author: "Nicholas C. Zakas",
+    pages: 352
+  }
+];
 
-Speaking JavaScript, Axel Rauschmayer, 460;
-Programming JavaScript Applications, Eric Elliott, 254;
-Understanding ECMAScript 6, Nicholas C. Zakas, 352.
+books.push({
+  title: "Learning JavaScript Design Patterns",
+  author: "Addy Osmani",
+  pages: 254
+});
 
-Create an array of three objects representing the books. 
-Each object must have the following properties: title, author, pages.*/
+console.log("Total number of books:", books.length);
 
+console.log("Book collection:");
+for (let book of books) {
+  console.log(book.title);
+}
 
+let newBooks = books.slice(-2);
+console.log("\nCopied last two books:");
+for (let book of newBooks) {
+  console.log(book.title);
+}
 
+books.shift();
 
+console.log("\nAfter removing the first book:");
+console.log("Total number of books:", books.length);
+for (let book of books) {
+  console.log(book.title);
+}
 
-/* Add a new book to the collection: 
-Learning JavaScript Design Patterns, by Addy Osmani, 254 pages. 
-Use the appropriate method to do this, 
-which will attach the book at the end of the array. 
-Display the length of the array and, in turn, all the book names in the collection.*/
-
-
-
-
-
+let totalPages = 0;
+for (let book of books) {
+  totalPages += book.pages;
+}
+console.log("\nTotal pages of remaining books:", totalPages);
 
 //Use the slice command to copy the last two books to the new array.
 
