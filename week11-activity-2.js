@@ -20,3 +20,13 @@ Using dot notation, add the name and surname fields to the
 object by entering your data as values. 
 Try to display the individual fields on the console. */
 
+
+let ticket = {
+  from: "Roxas Boulevard, Davao City",
+  to: "Amadeo, Cavite",
+  price: 3500.00
+};
+
+console.log("Starting Station:", ticket.from);
+console.log("End Station:", ticket.to);
+console.log("Ticket Price: ₱" + ticket.price);

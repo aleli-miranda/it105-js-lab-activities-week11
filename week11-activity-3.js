@@ -43,3 +43,51 @@ Display the length of the array and all the names of the books from the collecti
 
 //Display the sum of the pages of all the books from the collection.
 
+let books = [
+    {
+        title: "Speaking JavaScript",
+        author: "Axel Rauschmayer",
+        pages: 460
+    },
+    {
+        title: "Programming JavaScript Applications",
+        author: "Eric Elliott",
+        pages: 254
+    },
+    {
+        title: "Understanding ECMAScript 6",
+        author: "Nicholas C. Zakas",
+        pages: 352
+    }
+];
+
+console.log("All Books:");
+books.forEach(book => {
+    console.log(book.title + " by " + book.author);
+});
+
+
+books.push({
+    title: "Learning JavaScript Design Patterns",
+    author: "Addy Osmani",
+    pages: 254
+});
+
+console.log("\nAfter adding a new book:");
+console.log("Total number of books:", books.length);
+books.forEach(book => console.log("- " + book.title));
+
+
+let lastTwoBooks = books.slice(-2);
+console.log("\nLast two books:");
+lastTwoBooks.forEach(book => console.log("- " + book.title));
+
+
+let removedBook = books.shift();
+console.log("\nRemoved book:", removedBook.title);
+console.log("Books left:", books.length);
+books.forEach(book => console.log("- " + book.title));
+
+
+let totalPages = books.reduce((sum, book) => sum + book.pages, 0);
+console.log("\nTotal pages of all books:", totalPages);

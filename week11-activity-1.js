@@ -26,3 +26,28 @@ again in the format: name / phone / email.
 Use the length property of the array to determine the index of the last element. 
 Remember that the array elements are indexed starting at 0
 */
+"use strict";
+
+contacts.push({
+  name: "Maisie Haley",
+  phone: "0913 531 3030",
+  email: "risus.Quisque@urna.ca"
+})
+
+contacts[2].phone = "0800 2222"
+
+const RajaIndex = contacts.findIndex(contact => contact.name === "Raja Villarreal");
+if (RajaIndex !== -1) {
+    contacts.splice(RajaIndex, 1);
+}
+
+const FirstCont = contacts[0];
+const LastCont = contacts[contacts.length - 1];
+
+console.log("Current number of contacts:", contacts.length);
+console.log("\nFirst Contact:");
+console.log(`${FirstCont.name} / ${FirstCont.phone} / ${FirstCont.email}`);
+console.log("\nLast Contact:");
+console.log(`${LastCont.name} / ${LastCont.phone} / ${LastCont.email}`);
+console.log("\nFinal Contacts Array:");
+console.log(contacts);
