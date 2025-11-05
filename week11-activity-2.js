@@ -1,3 +1,40 @@
+let ticket = {
+    from: "Pasay",
+    to: "Metro Manila",
+    price: 50,
+};
+
+console.log("Starting Station:" + ticket.from);
+console.log("End Station:" + ticket.to);
+console.log("Ticket Price: " + ticket.price);
+
+let person = {};
+person.name = "Janelle";
+person.surname = " Atenas";
+
+console.log("Name: " + person.name + person.surname);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Objects
 /*
 Question 1: Create an object that describes a train ticket and 
