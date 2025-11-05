@@ -1,45 +1,42 @@
-//ARRAY
-/*We are setting up our small library of books 
-about JavaScript programming. 
-We have three books and want to prepare a list of them. 
-We will store three pieces information about each book: 
-title, author, and number of pages:
+let contacts = [{
+    name: "Maxwell Wright",
+    phone: "(0191) 719 6495",
+    email: "Curabitur.egestas.nunc@nonummyac.co.uk"
+}, {
+    name: "Raja Villarreal",
+    phone: "0866 398 2895",
+    email: "posuere.vulgate@sed.com"
+}, {
+    name: "Helen Richards",
+    phone: "0800 1111",
+    email: "libero@convallis.edu"
+}];
 
-Speaking JavaScript, Axel Rauschmayer, 460;
-Programming JavaScript Applications, Eric Elliott, 254;
-Understanding ECMAScript 6, Nicholas C. Zakas, 352.
+// 1. ADD a new contact using the push() method
+contacts.push({
+    name: "Maisie Haley",
+    phone: "0913 531 3030",
+    email: "risus.Quisque@urna.ca"
+});
 
-Create an array of three objects representing the books. 
-Each object must have the following properties: title, author, pages.*/
+// 2. UPDATE the phone number for Helen Richards
+// Helen Richards is currently at index 2 (the third element)
+contacts[2].phone = "0800 2222";
 
+// 3. DELETE the contact for Raja Villarreal from the array.
+// Raja Villarreal is currently at index 1
+// We use splice(startIndex, deleteCount)
+contacts.splice(1, 1);
 
+// 4. Display the first and last contact
+const firstContact = contacts[0];
+// The last contact is always at index contacts.length - 1
+const lastContact = contacts[contacts.length - 1]; 
 
+console.log("--- Final Contact List State ---");
+console.log("First Contact:");
+console.log(`${firstContact.name} / ${firstContact.phone} / ${firstContact.email}`);
 
-
-/* Add a new book to the collection: 
-Learning JavaScript Design Patterns, by Addy Osmani, 254 pages. 
-Use the appropriate method to do this, 
-which will attach the book at the end of the array. 
-Display the length of the array and, in turn, all the book names in the collection.*/
-
-
-
-
-
-
-//Use the slice command to copy the last two books to the new array.
-
-
-
-
-/*The first book from the collection is lost in unexplained circumstances. 
-You have already accepted the loss, so remove it from the array. 
-Which method will you use for this purpose? 
-Display the length of the array and all the names of the books from the collection in turn.*/
-
-
-
-
-
-//Display the sum of the pages of all the books from the collection.
-
+console.log("\nLast Contact:");
+console.log(`${lastContact.name} / ${lastContact.phone} / ${lastContact.email}`);
+// programmed by danicah
