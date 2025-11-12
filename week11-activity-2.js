@@ -22,11 +22,21 @@ Try to display the individual fields on the console. */
 
 
 let ticket = {
-  from: "Roxas Boulevard, Davao City",
-  to: "Amadeo, Cavite",
-  price: 3500.00
+  from: "Tagaytay Station",
+  to: "Alabang Station",
+  price: 120
 };
 
-console.log("Starting Station:", ticket.from);
-console.log("End Station:", ticket.to);
-console.log("Ticket Price: ₱" + ticket.price);
+console.log("Ticket Information:");
+console.log("From:", ticket.from);
+console.log("To:", ticket.to);
+console.log("Price:", ticket.price);
+
+// Question 2: Person object
+let person = {};
+person.name = "Juan";
+person.surname = "Dela Cruz";
+
+console.log("\nPerson Information:");
+console.log("Name:", person.name);
+console.log("Surname:", person.surname);

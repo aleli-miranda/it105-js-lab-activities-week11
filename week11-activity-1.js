@@ -26,28 +26,27 @@ again in the format: name / phone / email.
 Use the length property of the array to determine the index of the last element. 
 Remember that the array elements are indexed starting at 0
 */
-"use strict";
-
+// 1. Add a new contact
 contacts.push({
   name: "Maisie Haley",
   phone: "0913 531 3030",
   email: "risus.Quisque@urna.ca"
-})
+});
 
-contacts[2].phone = "0800 2222"
-
-const RajaIndex = contacts.findIndex(contact => contact.name === "Raja Villarreal");
-if (RajaIndex !== -1) {
-    contacts.splice(RajaIndex, 1);
+// 2. Update Helen Richards' phone number
+for (let contact of contacts) {
+  if (contact.name === "Helen Richards") {
+    contact.phone = "0800 2222";
+    break;
+  }
 }
 
-const FirstCont = contacts[0];
-const LastCont = contacts[contacts.length - 1];
+// 3. Delete Raja Villarreal
+contacts = contacts.filter(contact => contact.name !== "Raja Villarreal");
 
-console.log("Current number of contacts:", contacts.length);
-console.log("\nFirst Contact:");
-console.log(`${FirstCont.name} / ${FirstCont.phone} / ${FirstCont.email}`);
-console.log("\nLast Contact:");
-console.log(`${LastCont.name} / ${LastCont.phone} / ${LastCont.email}`);
-console.log("\nFinal Contacts Array:");
-console.log(contacts);
+// 4. Display the first and last contact
+let firstContact = contacts[0];
+let lastContact = contacts[contacts.length - 1];
+
+console.log(`${firstContact.name} / ${firstContact.phone} / ${firstContact.email}`);
+console.log(`${lastContact.name} / ${lastContact.phone} / ${lastContact.email}`);
